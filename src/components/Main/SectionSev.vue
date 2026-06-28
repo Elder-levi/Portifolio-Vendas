@@ -51,12 +51,15 @@
   display: flex;
   flex-direction: row;
   gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 
 .box-wrapper {
   position: relative;
-  flex: 1;
+  flex: 1 1 300px;
+  min-width: 260px;
   border-radius: 26px;
   padding: 2px; 
   background: #3f3f46;
@@ -99,6 +102,7 @@
   height: 100%;
   box-sizing: border-box;
   text-align: left;
+  min-height: 140px;
 }
 
 .box h3 {
@@ -118,5 +122,42 @@
 @keyframes spin {
   from { transform: rotate(0deg); }
   to   { transform: rotate(360deg); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .wrapper {
+    padding: 36px 20px;
+  }
+  .wrapper h1 {
+    font-size: 1.6rem;
+  }
+  .container {
+    gap: 18px;
+  }
+  .box {
+    padding: 28px;
+  }
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    padding: 28px 16px;
+  }
+  .wrapper h1 {
+    font-size: 1.4rem;
+    margin-bottom: 24px;
+  }
+  .container {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .box-wrapper {
+    flex: 1 1 100%;
+    min-width: auto;
+  }
+  .box {
+    padding: 20px;
+  }
 }
 </style>
