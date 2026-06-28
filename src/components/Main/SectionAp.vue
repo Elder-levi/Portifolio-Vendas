@@ -1,7 +1,12 @@
+<script setup>
+import TextMarquee from '../Animações/TextMarquee.vue';
+</script>
+
+
 <template>
   <section class="hero">
     <div class="conteudo">
-      <h1>Transforme sua ideia em um negócio com presença online</h1>
+      <h1>Transforme sua ideia em um negócio com <span style="color:#4ade80 ;">presença online</span></h1>
 
       <p>
         Sites, lojas virtuais e automações inteligentes para você vender mais,
@@ -12,11 +17,10 @@
     </div>
     
   </section>
-  <p>Bota uma Lista de framework que uso em forma de carrosel no intervalo entre as section</p>
+ <TextMarquee>
+ </TextMarquee>
 </template>
 
-<script setup>
-</script>
 
 <style scoped>
 

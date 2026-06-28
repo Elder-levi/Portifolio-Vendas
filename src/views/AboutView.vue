@@ -1,7 +1,14 @@
+<script setup>
+import SectionDuvidas from '@/components/Main/Duvidas/SectionDuvidas.vue';
+import SectionForms from '@/components/Main/Duvidas/SectionForms.vue';
+import SectionFaq from '@/components/Main/Duvidas/SectionFaq.vue';
+import SectionEncaminha from '@/components/Main/Duvidas/SectionEncaminha.vue';
+</script>
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+ <SectionDuvidas></SectionDuvidas>
+ <SectionForms></SectionForms>
+ <SectionFaq></SectionFaq>
+ <SectionEncaminha></SectionEncaminha>
 </template>
 
 <style>

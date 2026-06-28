@@ -21,6 +21,7 @@
 
 <style scoped>
 .problema {
+  background-color: #18181b;
   min-height: 70vh;
   display: flex;
   justify-content: center;

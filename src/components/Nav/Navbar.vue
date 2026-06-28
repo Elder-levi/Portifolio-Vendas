@@ -5,7 +5,7 @@
   </div>
    <ol>
     <li><router-link class="nav-link" to="/">Home</router-link></li>
-    <li><router-link class="nav-link"  to="/Preco">Preço</router-link></li>
+    <li><router-link class="nav-link"  to="/Duvidas">Duvidas</router-link></li>
     <li><router-link class="nav-link" to="/Sobre">Sobre</router-link></li>
    </ol>
    <div class="Bottom">
@@ -26,7 +26,7 @@
   width: 90%;
   max-width: 1200px;
 
-  background-color: black;
+  background-color:black;
   color: white;
 
   display: flex;
