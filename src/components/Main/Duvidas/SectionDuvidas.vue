@@ -8,7 +8,7 @@
     <div class="hero__content">
       <span class="hero__badge">FALE COMIGO</span>
       <h1 class="hero__title">
-        Conta pra mim sobre <br /> o seu projeto
+        CONTA PRA MIN SOBRE <br/> O SEU PROJETO
       </h1>
       <p class="hero__subtitle">
         Preencha o formulário abaixo e eu te retorno com o melhor
@@ -26,6 +26,7 @@
   overflow: hidden;
   text-align: center;
 }
+
 .hero__grid {
   position: absolute;
   inset: 0;
@@ -36,6 +37,7 @@
     linear-gradient(90deg, #333 1px, transparent 1px);
   background-size: 40px 40px;
 }
+
 .hero__glow {
   position: absolute;
   top: 25%;
@@ -48,6 +50,7 @@
   border-radius: 9999px;
   pointer-events: none;
 }
+
 .hero__content {
   position: relative;
   z-index: 10;
@@ -58,6 +61,7 @@
   align-items: center;
   gap: 24px;
 }
+
 .hero__badge {
   display: inline-block;
   padding: 6px 16px;

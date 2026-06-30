@@ -1,21 +1,21 @@
 <script setup>
-import TextMarquee from '../Animações/TextMarquee.vue';
+import TextMarquee from '../../Animações/TextMarquee.vue';
 </script>
 
 
 <template>
   <section class="hero">
     <div class="conteudo">
-      <h1>Transforme sua ideia em um negócio com <span style="color:#4ade80 ;">presença online</span></h1>
+      <h1 class="hero__title">Transforme sua ideia em um negócio com <span style="color:#4ade80 ;">presença online</span></h1>
 
-      <p>
+      <p class="hero__subtitle">
         Sites, lojas virtuais e automações inteligentes para você vender mais,
         ganhar tempo e profissionalizar sua marca.
       </p>
 
       <button>Quero meu projeto</button>
     </div>
-    
+
   </section>
  <TextMarquee>
  </TextMarquee>
@@ -25,25 +25,31 @@ import TextMarquee from '../Animações/TextMarquee.vue';
 <style scoped>
 
 .hero {
-  min-height: 100vh;
+  position: relative;
+  z-index: 10;
+  max-width: 800px;
+  margin: 0 auto;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-
-  padding: 0 2rem;
+  gap: 24px;
 }
+
 
 .conteudo {
   text-align: center;
   max-width: 900px;
 }
 
-h1 {
+.hero__title {
+  font-size: clamp(36px, 6vw, 60px);
+  font-weight: 800;
   color: white;
-  font-size: clamp(2.5rem, 5vw, 4.5rem);
   line-height: 1.1;
-  margin-bottom: 1.5rem;
+  margin: 0;
 }
+
+
 
 p {
   color: #9ca3af;

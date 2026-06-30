@@ -79,8 +79,8 @@ const form = reactive({
 
 const projectTypes = [
   { id: 'portfolio', emoji: '🎨', label: 'Portfolio / Landing Page' },
-  { id: 'loja',      emoji: '🛒', label: 'Loja Virtual'             },
-  { id: 'bot',       emoji: '🤖', label: 'Bot de Atendimento'       }
+  { id: 'loja',      emoji: '🛒', label: 'Loja Virtual'             }
+ /* { id: 'bot',       emoji: '🤖', label: 'Bot de Atendimento'       }*/
 ]
 
 const trust = [

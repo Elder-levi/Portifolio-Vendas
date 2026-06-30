@@ -2,51 +2,52 @@
 <div class=" wrappper">
     <div class ="marquee-text fadeout-horizontal">
     <div  class="marquee-text-track">
-     <p>Java</p>
-     <p>Java</p>
-     <p>Java</p>
-     <p>Java</p>
-     <p>Java</p>
-     <p>Java</p>
-     <p>Java</p>
-     <p>Java</p>
-     <p>Java</p>
-     <p>Java</p>
-      <p>Java</p>
-     <p aria-hidden ="true">Java</p>
-     <p aria-hidden ="true">Java</p>
-     <p aria-hidden ="true">Java</p>
-     <p aria-hidden ="true">Java</p>
-     <p aria-hidden ="true">Java</p>
-     <p aria-hidden ="true">Java</p>
-     <p aria-hidden ="true">Java</p>
-     <p aria-hidden ="true"> Java</p>
-     <p aria-hidden ="true">Java</p>
+   <p>HTML</p>
+<p>CSS</p>
+<p>JAVASCRIPT</p>
+<p>NODE.JS</p>
+<p>JAVA</p>
+<p>SPRING BOOT</p>
+<p>MYSQL</p>
+<p>VUE.JS</p>
+<p>DOCKER</p>
+<p>HTML</p>
+<p>CSS</p>
+
+<p aria-hidden="true">JAVASCRIPT</p>
+<p aria-hidden="true">NODE.JS</p>
+<p aria-hidden="true">JAVA</p>
+<p aria-hidden="true">SPRING BOOT</p>
+<p aria-hidden="true">MYSQL</p>
+<p aria-hidden="true">VUE.JS</p>
+<p aria-hidden="true">DOCKER</p>
+<p aria-hidden="true">HTML</p>
+<p aria-hidden="true">CSS</p>
       </div>
-  </div> 
+  </div>
   <div class ="marquee-text fadeout-horizontal">
     <div :style="{ '--reverse': 'reverse '}" class="marquee-text-track">
-        
-     <p>Java</p>
-     <p>Java</p>
-     <p>Java</p>
-     <p>Java</p>
-     <p>Java</p>
-     <p>Java</p>
-     <p>Java</p>
-     <p>Java</p>
-     <p>Java</p>
-     <p>Java</p>
-      <p>Java</p>
-     <p aria-hidden ="true">Java</p>
-     <p aria-hidden ="true">Java</p>
-     <p aria-hidden ="true">Java</p>
-     <p aria-hidden ="true">Java</p>
-     <p aria-hidden ="true">Java</p>
-     <p aria-hidden ="true">Java</p>
-     <p aria-hidden ="true">Java</p>
-     <p aria-hidden ="true"> Java</p>
-     <p aria-hidden ="true">Java</p>
+<p>HTML</p>
+<p>CSS</p>
+<p>JAVASCRIPT</p>
+<p>NODE.JS</p>
+<p>JAVA</p>
+<p>SPRING BOOT</p>
+<p>MYSQL</p>
+<p>VUE.JS</p>
+<p>DOCKER</p>
+<p>HTML</p>
+<p>CSS</p>
+
+<p aria-hidden="true">JAVASCRIPT</p>
+<p aria-hidden="true">NODE.JS</p>
+<p aria-hidden="true">JAVA</p>
+<p aria-hidden="true">SPRING BOOT</p>
+<p aria-hidden="true">MYSQL</p>
+<p aria-hidden="true">VUE.JS</p>
+<p aria-hidden="true">DOCKER</p>
+<p aria-hidden="true">HTML</p>
+<p aria-hidden="true">CSS</p>
       </div>
   </div>
 </div>

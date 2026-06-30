@@ -16,7 +16,7 @@
       <!-- Subtítulo -->
       <p class="cta__body">
         Me conta um pouco sobre seu projeto e eu te mostro o melhor caminho —
-        seja um site, uma loja ou um bot de atendimento.
+        seja um site, uma loja.
       </p>
 
 

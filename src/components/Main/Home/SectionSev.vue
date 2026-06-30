@@ -16,14 +16,14 @@
           <p>Venda seus produtos 24 horas por dia, sem depender só das redes sociais.</p>
         </div>
       </div>
-
+   <!--
       <div class="box-wrapper">
         <div class="box">
           <h3>Atendimento 24h</h3>
           <p>Tem muito fluxo de mensagens? Um bot responde seus clientes a qualquer hora, sem perder nenhuma oportunidade.</p>
         </div>
       </div>
-
+   -->
     </div>
   </div>
 </template>
@@ -61,9 +61,9 @@
   flex: 1 1 300px;
   min-width: 260px;
   border-radius: 26px;
-  padding: 2px; 
+  padding: 2px;
   background: #3f3f46;
-  overflow: hidden; 
+  overflow: hidden;
   transition: box-shadow 0.3s ease;
 }
 
@@ -98,7 +98,7 @@
   background: #3f3f46;
   border-radius: 24px;
   padding: 40px;
-  z-index: 1; 
+  z-index: 1;
   height: 100%;
   box-sizing: border-box;
   text-align: left;

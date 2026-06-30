@@ -1,10 +1,11 @@
 <template>
    <nav class="navbar">
       <div class="logo">
-           <h1>My App</h1>
+           <h1>CreateDev</h1>
      </div>
       <ol>
        <li><router-link class="nav-link" to="/">Home</router-link></li>
+       <li><router-link class="nav-link"  to="/Sevices">Serviços</router-link></li>
        <li><router-link class="nav-link"  to="/Duvidas">Duvidas</router-link></li>
        <li><router-link class="nav-link" to="/Sobre">Sobre</router-link></li>
       </ol>
@@ -39,7 +40,7 @@
      z-index: 1000;
    }
    .navbar ol {
-    width: 50%;   
+    width: 50%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -56,11 +57,11 @@
    background-color: #4ade80;
    width: 150px;
    height: 40px;
-   border-radius: 50px;    
+   border-radius: 50px;
    cursor: pointer;
    }
    button:hover {
-   background-color: 
+   background-color:
    rgba(74,222,128,0.3);
    }
 

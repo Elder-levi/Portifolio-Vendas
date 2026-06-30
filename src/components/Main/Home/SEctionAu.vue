@@ -76,7 +76,7 @@
 
 <script setup>
 const checklist = [
-  'Respostas automáticas no WhatsApp',
+ 
   'Agendamentos sem intervenção manual',
   'Integração entre sistemas e planilhas'
 ]
