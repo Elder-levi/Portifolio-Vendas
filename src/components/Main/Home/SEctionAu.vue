@@ -61,13 +61,18 @@
         </ul>
 
         <!-- Botão CTA -->
-        <button class="automacao__cta">
+        <a
+          class="automacao__cta"
+          href="https://wa.me/5571982354613?text=Ol%C3%A1!%20Vi%20o%20seu%20site%20e%20tenho%20interesse%20em%20solicitar%20um%20or%C3%A7amento."
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Quero automatizar meu processo
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M5 12h14M12 5l7 7-7 7" />
           </svg>
-        </button>
+        </a>
       </div>
 
     </div>
@@ -76,7 +81,7 @@
 
 <script setup>
 const checklist = [
- 
+
   'Agendamentos sem intervenção manual',
   'Integração entre sistemas e planilhas'
 ]

@@ -10,7 +10,14 @@
        <li><router-link class="nav-link" to="/Sobre">Sobre</router-link></li>
       </ol>
       <div class="Bottom">
-         <button>Fale-Conosco</button>
+         <a
+           class="nav-button"
+           href="https://wa.me/5571982354613?text=Ol%C3%A1!%20Vi%20o%20seu%20site%20e%20tenho%20interesse%20em%20solicitar%20um%20or%C3%A7amento."
+           target="_blank"
+           rel="noopener noreferrer"
+         >
+           Fale-Conosco
+         </a>
       </div>
    </nav>
    </template>
@@ -52,17 +59,23 @@
        color: #9ca3af;
    }
 
+   .nav-button,
    button {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
    border: none;
    background-color: #4ade80;
    width: 150px;
    height: 40px;
    border-radius: 50px;
    cursor: pointer;
+   text-decoration: none;
+   color: inherit;
    }
+   .nav-button:hover,
    button:hover {
-   background-color:
-   rgba(74,222,128,0.3);
+   background-color: rgba(74,222,128,0.3);
    }
 
    </style>

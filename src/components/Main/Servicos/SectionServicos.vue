@@ -19,10 +19,7 @@
         Explorando o futuro da web através de código elegante,
         interfaces intuitivas e infraestrutura escalável.
       </p>
-      <div class="hero-actions">
-        <button class="btn-primary">Ver Projetos ↓</button>
-        <button class="btn-secondary">Currículo PDF</button>
-      </div>
+
     </header>
 
     <!-- Stats -->
@@ -76,12 +73,7 @@
                 {{ tag }}
               </span>
             </div>
-          <!--
-            <div class="card-actions">
-              <a :href="project.demoUrl" class="btn-demo">Ver Demo</a>
-              <a :href="project.githubUrl" class="btn-github">GitHub</a>
-            </div>
-            --->
+
           </div>
         </div>
       </div>
@@ -98,30 +90,21 @@
           Estou sempre em busca de novos desafios e parcerias empolgantes.
           Vamos construir algo extraordinário juntos.
         </p>
-         <button class="cta__btn">
+         <a
+           class="cta__btn"
+           href="https://wa.me/5571982354613?text=Ol%C3%A1!%20Vi%20o%20seu%20site%20e%20tenho%20interesse%20em%20solicitar%20um%20or%C3%A7amento."
+           target="_blank"
+           rel="noopener noreferrer"
+         >
         Falar agora
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
           stroke="currentColor" stroke-width="2"
           stroke-linecap="round" stroke-linejoin="round">
           <path d="M5 12h14M12 5l7 7-7 7" />
         </svg>
-      </button>
+      </a>
       </div>
     </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="footer-container">
-        <div class="logo">
-          <div class="logo-icon">⬡</div>
-        </div>
-        <span class="footer-copy">© {{ year }} — DESIGNED FOR THE FUTURE</span>
-        <div class="footer-links">
-          <a href="#" class="footer-link">GitHub</a>
-          <a href="#" class="footer-link">LinkedIn</a>
-        </div>
-      </div>
-    </footer>
 
   </div>
 </template>
@@ -129,7 +112,7 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
 
-const year = new Date().getFullYear()
+
 
 const stats = [
   { label: 'Projetos',            value: '3+' },
@@ -642,44 +625,6 @@ a {
   transform: scale(0.97);
 }
 
-/* ── Footer ────────────────────────────────────────────── */
-.footer {
-  position: relative;
-  z-index: 10;
-  border-top: 1px solid var(--border);
-  padding: 48px 24px;
-}
-
-.footer-container {
-  max-width: 1280px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 24px;
-}
-
-.footer-copy {
-  font-family: monospace;
-  font-size: 12px;
-  color: var(--text-muted);
-}
-
-.footer-links {
-  display: flex;
-  gap: 24px;
-}
-
-.footer-link {
-  font-size: 14px;
-  color: var(--text-muted);
-  transition: color 0.2s;
-}
-
-.footer-link:hover {
-  color: var(--green);
-}
 
 /* ── Responsivo ────────────────────────────────────────── */
 @media (max-width: 1024px) {
