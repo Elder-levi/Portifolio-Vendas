@@ -28,12 +28,12 @@ const featureCards = [
             <span class="about-name">Elder levi</span>
           </h1>
           <p>
-         Desenvolvedor Full Stack em Salvador/BA, movido por curiosidade e atenção aos detalhes.
+         Sou Desenvolvedor Full Stack , nascido em Salvador/BA, movido por curiosidade e atenção aos detalhes.
         Ajudo a transformar ideias em produtos digitais elegantes, rápidos e confiáveis —
         do primeiro contato ao lançamento em produção.
           </p>
           <div class="about-actions">
-            <a class=" about-secondary-button " href="#habilidades">Download CV</a>
+            <a class=" about-secondary-button " href="#habilidad">Download CV</a>
           </div>
         </div>
         <div class="about-orb" aria-hidden="true" />
@@ -98,10 +98,15 @@ body { background: #0a0a0a; }
   display: flex;
   align-items:center;
   justify-content: space-between;
-  gap: 48px;
+  padding: 0 auto;
+  gap: 50px;
 
 }
-.about-hero-copy { max-width: 760px; }
+.about-hero-copy 
+{
+   max-width: 760px;
+  margin:  10rem;
+  }
 .about-hero h1 { font-size: 72px; font-weight: 900; line-height: 1.1; color: #fff; letter-spacing: -0.07em; margin: 0; }
 .about-name { color: #00ff88; }
 .about-hero p { color: #888; font-size: 20px; line-height: 1.65; margin: 16px 0 32px; max-width: 620px; }
@@ -121,6 +126,7 @@ body { background: #0a0a0a; }
   width: 400px; height: 400px; flex: 0 0 400px;
   border: 1px solid rgba(0,255,136,0.13);
   box-shadow: inset 0 0 80px rgba(0,255,136,0.08), 0 0 110px rgba(0,255,136,0.12);
+  margin:  10rem;
 }
 
 /* METODOLOGIA */

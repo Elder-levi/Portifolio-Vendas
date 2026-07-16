@@ -55,7 +55,7 @@
           <!-- Imagem -->
           <div class="card-image">
             <img :src="project.image" :alt="project.title" />
-            <div class="card-image-overlay"></div>
+            <div class="card-image-overlay"><a href="https://piscologa-rosa-nobrega.vercel.app/" target="_blank" ><img src="../../../assets/IMG/Rosa Nobrega.png" alt=""></a></div>
             <span class="card-category">{{ project.category }}</span>
           </div>
 
@@ -129,7 +129,7 @@ const projects = [
     id: '1', title: 'Piscologa Rosa Nobrega', category: 'Web',
     description: 'Plataforma de analytics em tempo real para monitorar saúde da rede.',
     tags: ['HTML', 'CSS', 'JAVASCRIPT'],
-    image: 'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&q=80&w=800',
+    image: '',
     demoUrl: '#', githubUrl: '#',
   },
 
