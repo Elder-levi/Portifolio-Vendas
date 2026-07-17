@@ -20,7 +20,7 @@
 
 <style scoped>
 .hero {
-  position: relative;
+  height: 100%;
   padding: 128px 16px 80px;
   background: #0a0a0a;
   overflow: hidden;

@@ -4,7 +4,7 @@
   background-color: 
 black;
   max-width: 100%;
-  margin: 0 auto;
+  margin: 10rem auto;
   padding: 2rem;
   font-weight: normal;
 }
@@ -23,11 +23,11 @@ a,
   }
 }
 
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   
-
   #app {
-    display: grid;
-    padding: 0 2rem;
+   
+    padding: 2rem;
+    max-width: 1024px;
   }
 }

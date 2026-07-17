@@ -34,9 +34,13 @@ const featureCards = [
           </p>
           <div class="about-actions">
             <a class=" about-secondary-button " href="#habilidad">Download CV</a>
+
+             <div class="about-orb" aria-hidden="true">
+              <img class="about-orb-image" src="../../../assets/IMG/Perfil_Elder_levi.png" alt="Elder Levi" />
+             </div>
           </div>
         </div>
-        <div class="about-orb" aria-hidden="true" />
+       
       </section>
 
       <!-- METODOLOGIA -->
@@ -98,14 +102,15 @@ body { background: #0a0a0a; }
   display: flex;
   align-items:center;
   justify-content: space-between;
-  padding: 0 auto;
-  gap: 50px;
 
+ 
 }
 .about-hero-copy 
 {
    max-width: 760px;
-  margin:  10rem;
+  padding: 0 28px;
+  padding-top: 10em;
+  margin: 0 auto;
   }
 .about-hero h1 { font-size: 72px; font-weight: 900; line-height: 1.1; color: #fff; letter-spacing: -0.07em; margin: 0; }
 .about-name { color: #00ff88; }
@@ -128,6 +133,18 @@ body { background: #0a0a0a; }
   box-shadow: inset 0 0 80px rgba(0,255,136,0.08), 0 0 110px rgba(0,255,136,0.12);
   margin:  10rem;
 }
+
+.about-orb-image
+{
+width: 400px;
+height: 400px;
+border-radius: 50%;
+
+
+
+
+}
+
 
 /* METODOLOGIA */
 .about-cards-section { background: #111; padding: 80px; text-align: center; }
