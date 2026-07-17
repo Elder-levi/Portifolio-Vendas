@@ -35,12 +35,13 @@ const featureCards = [
           <div class="about-actions">
             <a class=" about-secondary-button " href="#habilidad">Download CV</a>
 
-
+             
           </div>
         </div>
-            <div class="about-orb" aria-hidden="true">
+        <div class="about-orb" aria-hidden="true">
               <img class="about-orb-image" src="../../../assets/IMG/Perfil_Elder_levi.png" alt="Elder Levi" />
-            </div>
+        </div>   
+
       </section>
 
       <!-- METODOLOGIA -->
@@ -110,6 +111,7 @@ body { background: #0a0a0a; }
    max-width: 760px;
   padding: 0 28px;
   padding-top: 10em;
+  padding-bottom: 4em;
   margin: 0 auto;
   }
 .about-hero h1 { font-size: 72px; font-weight: 900; line-height: 1.1; color: #fff; letter-spacing: -0.07em; margin: 0; }
@@ -125,22 +127,24 @@ body { background: #0a0a0a; }
   transition: border-color 180ms ease, color 180ms ease, transform 180ms ease;
 }
 .about-secondary-button:hover { border-color: #00ff88; color: #00ff88; transform: translateY(-1px); }
+/* HERO - base */
 .about-orb {
   border-radius: 50%;
   background: radial-gradient(circle, #00ff8833, transparent 68%);
-  width: 400px; height: 400px; flex: 0 0 400px;
+  width: 400px;
+  height: 400px;
+  flex: 0 0 400px;
   border: 1px solid rgba(0,255,136,0.13);
   box-shadow: inset 0 0 80px rgba(0,255,136,0.08), 0 0 110px rgba(0,255,136,0.12);
-  margin:  10rem;
+  margin-right: 4rem; /* o "margin: 10rem" original empurrava o elemento pra tudo quanto é lado */
 }
 
-.about-orb-image
-{
-width: min(100svh , 100%);
-height: min(100svh , 100%);
-border-radius: 50%;
+.about-orb-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* min(100svh, 100%) não fazia sentido pra uma imagem redonda */
+  border-radius: 50%;
 }
-
 
 /* METODOLOGIA */
 .about-cards-section { background: #111; padding: 80px; text-align: center; }
@@ -180,39 +184,43 @@ border-radius: 50%;
   .about-hero {
     min-height: auto;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center; /* centraliza texto e orb quando empilham */
     padding: 130px 28px 72px;
   }
 
+  .about-hero-copy {
+    padding-top: 0;
+    text-align: center;
+  }
+
   .about-hero h1 { font-size: 54px; }
+
+  .about-hero p { margin-left: auto; margin-right: auto; }
+
+  .about-actions { justify-content: center; }
 
   .about-orb {
     width: 280px;
     height: 280px;
     flex-basis: 280px;
-    align-self: center;
+    margin: 40px 0 0; /* agora é só espaçamento vertical, sem sobras */
+    order: -1; /* opcional: foto acima do texto no mobile */
   }
 
   .about-cards-section,
   .about-highlight,
-  .about-skills {
-    padding: 68px 28px;
-  }
+  .about-skills { padding: 68px 28px; }
 
   .about-feature-row { flex-direction: column; }
-
   .about-skill-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
-/* Mobile médio */
 @media (max-width: 560px) {
   .about-hero h1 { font-size: 42px; }
 
   .about-section-title,
   .about-highlight h2,
-  .about-skills h2 {
-    font-size: 34px;
-  }
+  .about-skills h2 { font-size: 34px; }
 
   .about-skill-grid { grid-template-columns: 1fr; }
 
@@ -223,30 +231,22 @@ border-radius: 50%;
   }
 
   .about-cta,
-  .about-secondary-button {
-    width: 100%;
-    text-align: center;
-  }
+  .about-secondary-button { width: 100%; text-align: center; }
 }
 
-/* Mobile pequeno */
 @media (max-width: 480px) {
-  .about-hero {
-    padding: 110px 20px 56px;
-  }
-
+  .about-hero { padding: 110px 20px 56px; }
   .about-hero h1 { font-size: 32px; }
-
   .about-hero p { font-size: 1rem; }
 
   .about-orb {
     width: 200px;
     height: 200px;
     flex-basis: 200px;
+    margin-top: 24px;
   }
 }
 
-/* Mobile muito pequeno */
 @media (max-width: 370px) {
   .about-hero h1 { font-size: 26px; }
 
@@ -254,10 +254,9 @@ border-radius: 50%;
     width: 160px;
     height: 160px;
     flex-basis: 160px;
+    margin-top: 16px;
   }
 
-  .about-actions {
-    gap: 8px;
-  }
+  .about-actions { gap: 8px; }
 }
 </style>
