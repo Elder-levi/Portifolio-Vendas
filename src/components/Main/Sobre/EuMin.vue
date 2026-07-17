@@ -35,12 +35,12 @@ const featureCards = [
           <div class="about-actions">
             <a class=" about-secondary-button " href="#habilidad">Download CV</a>
 
-             <div class="about-orb" aria-hidden="true">
-              <img class="about-orb-image" src="../../../assets/IMG/Perfil_Elder_levi.png" alt="Elder Levi" />
-             </div>
+
           </div>
         </div>
-       
+            <div class="about-orb" aria-hidden="true">
+              <img class="about-orb-image" src="../../../assets/IMG/Perfil_Elder_levi.png" alt="Elder Levi" />
+            </div>
       </section>
 
       <!-- METODOLOGIA -->
@@ -136,13 +136,9 @@ body { background: #0a0a0a; }
 
 .about-orb-image
 {
-width: 400px;
-height: 400px;
+width: min(100svh , 100%);
+height: min(100svh , 100%);
 border-radius: 50%;
-
-
-
-
 }
 
 
@@ -177,24 +173,91 @@ border-radius: 50%;
 .about-skill-card h3 { color: #fff; font-size: 20px; font-weight: 900; letter-spacing: -0.035em; margin: 0 0 12px; }
 .about-skill-card p { color: #888; font-size: 14px; line-height: 1.55; margin: 0; }
 
-
-/* RESPONSIVO */
 @media (max-width: 980px) {
   .about-navbar { padding: 16px 28px; }
   .about-nav-links { display: none; }
-  .about-hero { min-height: auto; flex-direction: column; align-items: flex-start; padding: 130px 28px 72px; }
+
+  .about-hero {
+    min-height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 130px 28px 72px;
+  }
+
   .about-hero h1 { font-size: 54px; }
-  .about-orb { width: 280px; height: 280px; flex-basis: 280px; align-self: center; }
-  .about-cards-section, .about-highlight, .about-skills { padding: 68px 28px; }
+
+  .about-orb {
+    width: 280px;
+    height: 280px;
+    flex-basis: 280px;
+    align-self: center;
+  }
+
+  .about-cards-section,
+  .about-highlight,
+  .about-skills {
+    padding: 68px 28px;
+  }
+
   .about-feature-row { flex-direction: column; }
+
   .about-skill-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
+/* Mobile médio */
 @media (max-width: 560px) {
   .about-hero h1 { font-size: 42px; }
-  .about-section-title, .about-highlight h2, .about-skills h2 { font-size: 34px; }
+
+  .about-section-title,
+  .about-highlight h2,
+  .about-skills h2 {
+    font-size: 34px;
+  }
+
   .about-skill-grid { grid-template-columns: 1fr; }
-  .about-actions { flex-direction: column; width: 100%; }
-  .about-cta, .about-secondary-button { width: 100%; }
+
+  .about-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .about-cta,
+  .about-secondary-button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Mobile pequeno */
+@media (max-width: 480px) {
+  .about-hero {
+    padding: 110px 20px 56px;
+  }
+
+  .about-hero h1 { font-size: 32px; }
+
+  .about-hero p { font-size: 1rem; }
+
+  .about-orb {
+    width: 200px;
+    height: 200px;
+    flex-basis: 200px;
+  }
+}
+
+/* Mobile muito pequeno */
+@media (max-width: 370px) {
+  .about-hero h1 { font-size: 26px; }
+
+  .about-orb {
+    width: 160px;
+    height: 160px;
+    flex-basis: 160px;
+  }
+
+  .about-actions {
+    gap: 8px;
+  }
 }
 </style>
